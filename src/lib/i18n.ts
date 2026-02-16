@@ -159,6 +159,36 @@ export const dict: Record<Lang, Record<string, string>> = {
         cookie_accept: "Aceptar",
         cookie_decline: "Rechazar",
         cookie_learn_more: "Más información",
+
+        /* FAQ Section */
+        faq_badge: "Preguntas Frecuentes",
+        faq_title: "Todo lo que necesitas saber",
+        faq_q1: "¿Qué tipos de eventos corporativos organizáis?",
+        faq_a1: "Cubrimos ferias comerciales, congresos, eventos MICE (Meetings, Incentives, Conferences, Exhibitions), roadshows internacionales, presentaciones de producto y eventos de networking. Nuestra red de partners especializados nos permite gestionar desde eventos pequeños hasta grandes convenciones.",
+        faq_q2: "¿Trabajáis en toda España?",
+        faq_a2: "Sí, nuestra red de partners cubre toda España con proveedores locales en las principales ciudades: Madrid, Barcelona, Valencia, Sevilla, Bilbao y más. También gestionamos eventos internacionales en Europa y Latinoamérica.",
+        faq_q3: "¿Qué incluye vuestro servicio?",
+        faq_a3: "Conectamos con proveedores especializados en staffing (azafatas, personal de eventos), catering gourmet, logística integral, espacios y venues, branding y material gráfico, gestión DMC/MICE, y coordinación end-to-end. Un solo contacto para todo tu evento.",
+        faq_q4: "¿Cuánto tiempo necesitáis para organizar un evento?",
+        faq_a4: "Depende del tipo y tamaño del evento. Para eventos pequeños podemos gestionar en 2-3 semanas. Para ferias o congresos grandes, recomendamos 2-3 meses de antelación para asegurar los mejores proveedores y espacios.",
+        faq_q5: "¿Tenéis personal bilingüe disponible?",
+        faq_a5: "Sí, contamos con azafatas, coordinadores y personal de eventos bilingüe (español-inglés) y multilingüe para eventos internacionales. Perfecto para congresos y ferias con asistentes de diferentes países.",
+
+        /* Event Types Section */
+        event_types_title: "Tipos de Eventos que Gestionamos",
+        event_types_subtitle: "Nuestra red de partners especializados cubre todo el espectro de eventos corporativos en España y el extranjero.",
+        event_type1_title: "Ferias Comerciales y Trade Shows",
+        event_type1_desc: "Gestión integral de stands, personal especializado, logística y coordinación para ferias internacionales. Desde montaje hasta desmontaje.",
+        event_type2_title: "Congresos y Conferencias",
+        event_type2_desc: "Organización completa de congresos empresariales con gestión de espacios, catering, audiovisuales y coordinación de ponentes.",
+        event_type3_title: "Eventos MICE",
+        event_type3_desc: "Meetings, Incentives, Conferences, Exhibitions: gestión DMC profesional con proveedores cualificados y experiencia internacional.",
+        event_type4_title: "Roadshows y Lanzamientos",
+        event_type4_desc: "Eventos multiciudad para presentaciones de producto, con coordinación logística, personal y materiales en cada localización.",
+        event_type5_title: "Team Building",
+        event_type5_desc: "Actividades y eventos de incentivo para empresas: desde experiencias outdoor hasta eventos gastronómicos y culturales.",
+        event_type6_title: "Presentaciones Corporativas",
+        event_type6_desc: "Eventos de networking, presentaciones de resultados, juntas de accionistas y convenciones de ventas con producción a medida.",
     },
 
     en: {
@@ -305,6 +335,36 @@ export const dict: Record<Lang, Record<string, string>> = {
         contact_location_label: "Location",
         contact_location_value: "Spain",
         contact_whatsapp: "WhatsApp",
+
+        /* FAQ Section */
+        faq_badge: "Frequently Asked Questions",
+        faq_title: "Everything you need to know",
+        faq_q1: "What types of corporate events do you organize?",
+        faq_a1: "We cover trade shows, congresses, MICE events (Meetings, Incentives, Conferences, Exhibitions), international roadshows, product launches, and networking events. Our network of specialized partners allows us to manage everything from small events to large conventions.",
+        faq_q2: "Do you work throughout Spain?",
+        faq_a2: "Yes, our partner network covers all of Spain with local suppliers in major cities: Madrid, Barcelona, Valencia, Seville, Bilbao, and more. We also manage international events in Europe and Latin America.",
+        faq_q3: "What does your service include?",
+        faq_a3: "We connect you with specialized suppliers in staffing (hostesses, event personnel), gourmet catering, comprehensive logistics, venues and spaces, branding and graphic materials, DMC/MICE management, and end-to-end coordination. One single contact for your entire event.",
+        faq_q4: "How much time do you need to organize an event?",
+        faq_a4: "It depends on the type and size of the event. For small events we can manage in 2-3 weeks. For large fairs or congresses, we recommend 2-3 months in advance to ensure the best suppliers and spaces.",
+        faq_q5: "Do you have bilingual staff available?",
+        faq_a5: "Yes, we have bilingual (Spanish-English) and multilingual hostesses, coordinators, and event staff for international events. Perfect for congresses and fairs with attendees from different countries.",
+
+        /* Event Types Section */
+        event_types_title: "Types of Events We Manage",
+        event_types_subtitle: "Our network of specialized partners covers the full spectrum of corporate events in Spain and abroad.",
+        event_type1_title: "Trade Shows and Exhibitions",
+        event_type1_desc: "Comprehensive management of booths, specialized staff, logistics, and coordination for international trade shows. From setup to teardown.",
+        event_type2_title: "Congresses and Conferences",
+        event_type2_desc: "Complete organization of corporate congresses with venue management, catering, audiovisual coordination, and speaker coordination.",
+        event_type3_title: "MICE Events",
+        event_type3_desc: "Meetings, Incentives, Conferences, Exhibitions: professional DMC management with qualified suppliers and international experience.",
+        event_type4_title: "Roadshows and Launches",
+        event_type4_desc: "Multi-city events for product presentations, with logistical coordination, staff, and materials at each location.",
+        event_type5_title: "Team Building",
+        event_type5_desc: "Corporate incentive activities and events: from outdoor experiences to gastronomic and cultural events.",
+        event_type6_title: "Corporate Presentations",
+        event_type6_desc: "Networking events, results presentations, shareholder meetings, and sales conventions with customized production.",
 
         /* Cookies */
         cookie_title: "We use cookies",

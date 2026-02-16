@@ -18,10 +18,10 @@ export default function ServiciosPage() {
     }, []);
 
     const services = [
-        { key: "svc1", image: "/images/eventos-3.jpg", alt: "Staffing & Personal" },
-        { key: "svc2", image: "/images/eventos-2.jpg", alt: "DMC & MICE" },
-        { key: "svc3", image: "/images/eventos-4.jpg", alt: "Catering & Espacios" },
-        { key: "svc4", image: "/images/eventos-6.jpg", alt: "Branding & Logística" },
+        { key: "svc1", image: "/images/eventos-3.jpg", alt: "Personal de staffing profesional en evento corporativo" },
+        { key: "svc2", image: "/images/eventos-2.jpg", alt: "Gestión DMC para eventos MICE profesionales" },
+        { key: "svc3", image: "/images/eventos-4.jpg", alt: "Catering gourmet para eventos empresariales" },
+        { key: "svc4", image: "/images/eventos-6.jpg", alt: "Branding y señalética para evento corporativo" },
     ];
 
     return (

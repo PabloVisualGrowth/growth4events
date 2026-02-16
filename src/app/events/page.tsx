@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/lib/i18n";
+import { AccordionItem } from "@/components/AccordionItem";
 
 export default function HomePage() {
     const { t } = useLanguage();
@@ -47,12 +48,11 @@ export default function HomePage() {
                         </div>
                     </div>
 
-                    {/* Col 3-4: Image Mosaic — eventos-1, 5, 7, 9 */}
                     <div className="col-span-1 md:col-span-2 grid grid-cols-2 grid-rows-2 h-[50vh] md:h-full">
                         <div className="relative border-r border-b border-black group overflow-hidden">
                             <Image
                                 src="/images/eventos-1.jpg"
-                                alt="Event venue"
+                                alt="Montaje evento corporativo con instalaciones modulares"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                                 priority
@@ -62,7 +62,7 @@ export default function HomePage() {
                         <div className="relative border-b border-black group overflow-hidden">
                             <Image
                                 src="/images/eventos-5.jpg"
-                                alt="Conference"
+                                alt="Conferencia corporativa con asistentes profesionales"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                                 priority
@@ -72,7 +72,7 @@ export default function HomePage() {
                         <div className="relative border-r border-black group overflow-hidden">
                             <Image
                                 src="/images/eventos-7.jpg"
-                                alt="Networking"
+                                alt="Networking en evento empresarial"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                                 priority
@@ -82,7 +82,7 @@ export default function HomePage() {
                         <div className="relative group overflow-hidden">
                             <Image
                                 src="/images/eventos-9.jpg"
-                                alt="Corporate event"
+                                alt="Sala de eventos corporativos preparada"
                                 fill
                                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                                 priority
@@ -103,6 +103,29 @@ export default function HomePage() {
                         <svg className="w-8 h-8 animate-pulse text-[#0cc0df]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══ TIPOS DE EVENTOS — Accordion Version ═══ */}
+            <section className="border-b border-black py-16 md:py-24 px-6 md:px-12">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-3xl md:text-5xl font-serif italic mb-8">
+                        {t("event_types_title")}
+                    </h2>
+                    <p className="text-lg md:text-xl font-serif italic leading-relaxed mb-12 max-w-3xl text-gray-700">
+                        {t("event_types_subtitle")}
+                    </p>
+
+                    <div className="space-y-0">
+                        {[1, 2, 3, 4, 5, 6].map((num) => (
+                            <AccordionItem
+                                key={num}
+                                title={t(`event_type${num}_title`)}
+                            >
+                                {t(`event_type${num}_desc`)}
+                            </AccordionItem>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -139,10 +162,11 @@ export default function HomePage() {
                     >
                         <Image
                             src="/images/eventos-10.jpg"
-                            alt="Partner Network"
+                            alt="Red de partners especializados en eventos corporativos"
                             fill
                             className="object-contain transition-all duration-1000"
                             quality={95}
+                            loading="lazy"
                         />
                     </motion.div>
                 </div>
@@ -183,10 +207,17 @@ export default function HomePage() {
                         >
                             <Image
                                 src={a.img}
-                                alt={t(`${a.key}_title`)}
+                                alt={
+                                    a.key === "audience1"
+                                        ? "Feria comercial y trade show profesional"
+                                        : a.key === "audience2"
+                                            ? "Evento MICE con gestión profesional"
+                                            : "Roadshow internacional para empresas"
+                                }
                                 fill
                                 className="object-cover transition-all duration-700"
                                 quality={95}
+                                loading="lazy"
                             />
                         </motion.div>
                         <div className="absolute top-0 left-0 p-6 pointer-events-none">
@@ -199,6 +230,48 @@ export default function HomePage() {
                         </div>
                     </div>
                 ))}
+            </section>
+
+            {/* ═══ FAQ SECTION — Accordion Version ═══ */}
+            <section className="border-b border-black py-16 md:py-24 px-6 md:px-12">
+                <div className="max-w-4xl mx-auto">
+                    <span className="text-xs font-bold uppercase tracking-widest block mb-6 text-[#0cc0df]">
+                        {t("faq_badge")}
+                    </span>
+                    <h2 className="text-3xl md:text-5xl font-serif italic mb-12">
+                        {t("faq_title")}
+                    </h2>
+
+                    <div className="space-y-0">
+                        {[1, 2, 3, 4, 5].map((num) => (
+                            <AccordionItem
+                                key={num}
+                                title={t(`faq_q${num}`)}
+                            >
+                                {t(`faq_a${num}`)}
+                            </AccordionItem>
+                        ))}
+                    </div>
+                </div>
+
+                {/* FAQ Schema Markup */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            mainEntity: [1, 2, 3].map(num => ({
+                                "@type": "Question",
+                                name: t(`faq_q${num}`),
+                                acceptedAnswer: {
+                                    "@type": "Answer",
+                                    text: t(`faq_a${num}`)
+                                }
+                            }))
+                        })
+                    }}
+                />
             </section>
 
             {/* ═══ TESTIMONIALS ═══ */}
