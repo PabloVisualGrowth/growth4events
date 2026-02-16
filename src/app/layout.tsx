@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     description:
       "Red de partners especializados para eventos corporativos. Staffing, DMC, MICE, catering y logística integral.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Growth4Events - Tu Partner 360° en Eventos",
+      },
+    ],
   },
   icons: {
     icon: [
