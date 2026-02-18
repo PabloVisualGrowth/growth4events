@@ -10,6 +10,7 @@ import { AccordionItem } from "@/components/AccordionItem";
 export default function HomePage() {
     const { t } = useLanguage();
     const [isMobile, setIsMobile] = useState(false);
+    const [localHover, setLocalHover] = useState(false);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -224,7 +225,11 @@ export default function HomePage() {
 
             {/* ═══ LOCAL PARTNER BLOCK ═══ */}
             <section className="grid grid-cols-1 md:grid-cols-2 border-b border-black">
-                <div className="relative border-b md:border-b-0 md:border-r border-black group min-h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500">
+                <div
+                    className="relative border-b md:border-b-0 md:border-r border-black group min-h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500"
+                    onMouseEnter={() => setLocalHover(true)}
+                    onMouseLeave={() => setLocalHover(false)}
+                >
                     <motion.div
                         initial={false}
                         whileInView={isMobile ? { backgroundColor: "#0cc0df" } : {}}
@@ -247,13 +252,10 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                <div className="relative h-[55vh] overflow-hidden bg-gray-100">
-                    <motion.div
-                        initial={{ filter: "grayscale(100%)" }}
-                        whileInView={isMobile ? { filter: "grayscale(0%)" } : {}}
-                        whileHover={{ filter: "grayscale(0%)" }}
-                        viewport={{ amount: 0.2, margin: "-30% 0px -30% 0px" }}
+                <div className="relative h-[55vh] md:h-auto overflow-hidden bg-gray-100">
+                    <div
                         className="absolute inset-0"
+                        style={{ filter: localHover ? "grayscale(0%)" : "grayscale(100%)", transition: "filter 0.7s ease" }}
                     >
                         <Image
                             src="/images/eventos-10.jpg"
@@ -263,7 +265,7 @@ export default function HomePage() {
                             quality={95}
                             loading="lazy"
                         />
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
