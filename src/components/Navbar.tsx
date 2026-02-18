@@ -35,7 +35,7 @@ export function Navbar() {
             >
                 <div
                     className={`w-full flex justify-between items-center text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all duration-700 ${isScrolled
-                        ? "bg-[#FDF7E8]/80 backdrop-blur-sm text-black py-2 px-4 md:px-8 border-y border-black/10"
+                        ? "bg-white/40 backdrop-blur-md text-black py-2 px-4 md:px-8 border-y border-black/10"
                         : "bg-transparent text-black py-4 px-4 md:px-8"
                         }`}
                 >
