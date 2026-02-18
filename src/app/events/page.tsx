@@ -53,42 +53,42 @@ export default function HomePage() {
 
                     {/* Col 3-4: Image mosaic */}
                     <div className="col-span-1 md:col-span-2 grid grid-cols-2 grid-rows-2 h-[50vh] md:h-full">
-                        <div className="relative border-r border-b border-black group overflow-hidden">
+                        <div className="relative border-r border-b border-black overflow-hidden">
                             <Image
                                 src="/images/eventos-1.jpg"
                                 alt="Corporate event stand setup in Spain"
                                 fill
-                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                className="object-cover transition-all duration-700"
                                 priority
                                 quality={95}
                             />
                         </div>
-                        <div className="relative border-b border-black group overflow-hidden">
+                        <div className="relative border-b border-black overflow-hidden">
                             <Image
                                 src="/images/eventos-5.jpg"
                                 alt="Professional corporate conference in Spain"
                                 fill
-                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                className="object-cover transition-all duration-700"
                                 priority
                                 quality={95}
                             />
                         </div>
-                        <div className="relative border-r border-black group overflow-hidden">
+                        <div className="relative border-r border-black overflow-hidden">
                             <Image
                                 src="/images/eventos-7.jpg"
                                 alt="Trade show staffing and event coordination Spain"
                                 fill
-                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                className="object-cover transition-all duration-700"
                                 priority
                                 quality={95}
                             />
                         </div>
-                        <div className="relative group overflow-hidden">
+                        <div className="relative overflow-hidden">
                             <Image
                                 src="/images/eventos-9.jpg"
                                 alt="Corporate dinner venue Spain"
                                 fill
-                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                className="object-cover transition-all duration-700"
                                 priority
                                 quality={95}
                             />
