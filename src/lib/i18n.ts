@@ -12,53 +12,57 @@ export const dict: Record<Lang, Record<string, string>> = {
         /* Nav */
         nav_home: "Inicio",
         nav_services: "Servicios",
-        nav_sectors: "Sectores",
-        nav_process: "Proceso",
+        nav_sectors: "Ferias & Eventos",
+        nav_process: "Nuestro Enfoque",
         nav_about: "Nosotros",
         nav_contact: "Contacto",
-        nav_cta: "Hablemos",
+        nav_cta: "Contactar",
 
-        /* Hero */
-        hero_badge: "Tu partner 360° en eventos",
-        hero_title: "Conectamos tu evento con los mejores partners",
-        hero_sub: "Accede a una red especializada de proveedores para cada detalle de tu evento corporativo. Sin complicaciones, un solo contacto.",
-        hero_cta1: "Agenda una llamada",
+        /* Hero — Home */
+        hero_badge: "Growth 4 Events",
+        hero_title: "Soporte Operativo para Eventos Corporativos en España",
+        hero_sub: "Coordinamos tu presencia en ferias, cenas corporativas, staffing, transfers y más — para que tu equipo se centre en el negocio.",
+        hero_cta1: "Planifica tu evento",
         hero_cta2: "Ver servicios",
 
+        /* Home — Problem / Solution */
+        home_problem_title: "Coordinar un evento en otro país tiene costes ocultos",
+        home_problem_body: "Proveedores desconocidos, logística local compleja, diferencias de idioma y requisitos de cumplimiento. Cada decisión lleva más tiempo cuando no estás sobre el terreno. Nosotros ya lo estamos.",
+        home_solution_intro: "Un partner local. Control operativo completo. Sin sobrecostes de coordinación.",
+
+        /* Home — Services section */
+        home_services_title: "Soporte integral estructurado por servicio",
+        home_services_cta_label: "Ver todos los servicios",
+        home_services_cta_copy: "Cada servicio coordinado desde un único punto de contacto local.",
+
+        /* Home — How We Work teaser */
+        home_process_title: "Un proceso claro de principio a fin",
+        process_link: "Ver nuestro enfoque completo",
+
         /* Pillars */
-        pillars_badge: "Red de partners",
-        pillars_title: "Un ecosistema completo para eventos corporativos",
-        pillar1_title: "Red de Partners Especializados",
-        pillar1_desc: "Conectamos tu empresa con los mejores proveedores de staffing, DMC, MICE, transfers, catering, mobiliario, branding y espacios exclusivos.",
+        pillars_badge: "Por qué importa",
+        pillars_title: "Coordinar eventos internacionales requiere un partner local",
+        pillar1_title: "Coordinar en otro país requiere un partner local",
+        pillar1_desc: "Red de contactos construida durante años. Proveedores verificados, espacios conocidos y logística local dominada. Cuando tu equipo aterriza en España, todo ya está en su lugar.",
 
         /* Audience */
         audience_badge: "Para quién",
-        audience_title: "¿Tu empresa organiza eventos corporativos en España?",
-        audience_sub: "Si necesitas acceso rápido a proveedores especializados sin gestionar múltiples contactos, estamos aquí.",
-        audience1_title: "Ferias & Congresos",
-        audience1_desc: "Empresas que participan en ferias comerciales y congresos internacionales.",
-        audience2_title: "Eventos MICE",
-        audience2_desc: "Reuniones corporativas, incentivos y lanzamientos de producto.",
-        audience3_title: "Roadshows",
-        audience3_desc: "Eventos itinerantes que necesitan réplica consistente en múltiples ciudades.",
-
-        /* Testimonials */
-        testimonials_badge: "Testimonios",
-        testimonials_title: "Confían en nosotros",
-        testimonial1_quote: "Growth 4 Events nos conectó con partners excepcionales. Todo coordinado, sin dolores de cabeza.",
-        testimonial1_author: "Director de Marketing",
-        testimonial1_company: "Empresa Tech",
-        testimonial2_quote: "Un solo contacto para todo nuestro roadshow. Simplificó radicalmente nuestra logística.",
-        testimonial2_author: "Event Manager",
-        testimonial2_company: "Multinacional",
+        audience_title: "¿Tu empresa asiste a ferias o celebra eventos corporativos en España?",
+        audience_sub: "Empresas internacionales que necesitan coordinación operativa local sin la carga de gestionarlo desde el extranjero.",
+        audience1_title: "Ferias y Exposiciones",
+        audience1_desc: "Empresas internacionales con stands en ferias comerciales que necesitan staffing, branding, catering y logística local.",
+        audience2_title: "Eventos Corporativos",
+        audience2_desc: "Empresas que organizan cenas corporativas, team building o eventos internos en España.",
+        audience3_title: "MICE y Viajes Corporativos",
+        audience3_desc: "Organizaciones que coordinan viajes corporativos, incentivos y eventos integrados en España.",
 
         /* CTA */
-        cta_title: "¿Listo para simplificar tu próximo evento?",
-        cta_sub: "Agenda una llamada estratégica de 20 minutos. Sin compromiso.",
-        cta_btn: "Agenda tu llamada",
+        cta_title: "¿Planeas un evento en España? Coordinémoslo correctamente.",
+        cta_sub: "Cuéntanos qué necesitas. Nosotros nos encargamos del resto.",
+        cta_btn: "Contactar",
 
         /* Footer */
-        footer_tagline: "Tu partner 360° en eventos corporativos en España.",
+        footer_tagline: "Soporte operativo para eventos corporativos en España.",
         footer_nav: "Navegación",
         footer_contact: "Contacto",
         footer_legal: "Legal",
@@ -67,86 +71,136 @@ export const dict: Record<Lang, Record<string, string>> = {
         footer_cookies: "Cookies",
         footer_rights: "Todos los derechos reservados.",
 
-        /* Services Page */
+        /* ─── SERVICES PAGE — 7 exact services ─── */
         services_badge: "Servicios",
-        services_title: "Un punto de contacto para todas las necesidades de tu evento",
-        services_sub: "Accede a nuestra red de partners especializados. Te conectamos con los mejores, tú decides.",
-        svc1_title: "Staffing & Personal",
-        svc1_desc: "Azafatas, personal de stand, intérpretes, coordinadores en sala y equipos especializados para tu evento.",
-        svc1_items: "Personal de stand y recepción,Azafatas y promotores,Coordinadores de evento",
-        svc2_title: "DMC & MICE",
-        svc2_desc: "Gestión integral de eventos corporativos, incentivos, transfers VIP y experiencias para grupos.",
-        svc2_items: "Gestión de incentivos corporativos,Transfers VIP y logística,Actividades de team building,Organización de congresos",
-        svc3_title: "Catering & Espacios",
-        svc3_desc: "Reservas en restaurantes exclusivos, catering gourmet, alquiler de mobiliario y decoración para eventos.",
-        svc3_items: "Catering gourmet,Alquiler de mobiliario y decoración,Reservas en espacios exclusivos,Grupos de música en directo,Gestión de locales y venues",
-        svc4_title: "Branding & Logística",
-        svc4_desc: "Producción de branding para eventos, reservas de vuelos, gestión de ticketing y coordinación logística end-to-end.",
-        svc4_items: "Branding y material gráfico,Reservas de vuelos corporativos,Gestión all-in-one de ticketing,Coordinación logística integral",
+        services_title: "Soporte operativo integral para tu evento en España",
+        services_sub: "Siete servicios coordinados desde un único punto de contacto local.",
 
-        /* Sectors Page */
-        sectors_badge: "Sectores",
-        sectors_title: "Casos de uso reales",
-        sectors_sub: "Cada tipo de evento requiere partners específicos. Estas son las situaciones donde más valor aportamos.",
-        sector1_title: "Ferias & Exposiciones",
-        sector1_obj: "Stand con personal cualificado, logística impecable y presencia de marca consistente.",
-        sector1_pain: "Múltiples proveedores, falta de coordinación, personal no formado.",
-        sector1_solution: "Te conectamos con staffing especializado, catering, mobiliario y branding bajo un único punto de contacto.",
-        sector2_title: "Eventos Corporativos",
-        sector2_obj: "Crear experiencias memorables con catering, venue y producción de primer nivel.",
-        sector2_pain: "Proveedores desconectados, presupuestos opacos, falta de control.",
-        sector2_solution: "Acceso directo a nuestra red de partners premium con tarifas transparentes y coordinación central.",
-        sector3_title: "Roadshows Multi-Ciudad",
-        sector3_obj: "Replicar experiencia consistente en múltiples ciudades con partners locales.",
-        sector3_pain: "Falta de estandarización, logística fragmentada, calidad desigual.",
-        sector3_solution: "Red de partners homologados en toda España. Mismo estándar, adaptación local.",
-        sector_objectives: "Objetivos",
-        sector_painpoints: "Pain Points",
-        sector_oursolution: "Nuestra Solución",
+        svc1_title: "Reservas de Locales y Restaurantes",
+        svc1_desc: "Seleccionamos y reservamos el espacio adecuado para cenas corporativas, eventos internos y actividades de team building en los mejores restaurantes y locales de España.",
+        svc1_short: "Restaurantes y locales de prestigio para cenas corporativas, eventos internos y team building.",
+        svc1_items: "Reservas en restaurantes de prestigio,Locales para eventos corporativos privados,Espacios para team building,Cenas de empresa y eventos de cliente",
 
-        /* Process Page */
-        process_badge: "Proceso",
-        process_title: "Cómo trabajamos",
-        process_sub: "Un proceso transparente diseñado para conectarte con los partners adecuados.",
-        step1_title: "Briefing",
-        step1_desc: "Nos cuentas qué necesitas: tipo de evento, ciudad, fecha, servicios requeridos y presupuesto aproximado.",
-        step2_title: "Matching",
-        step2_desc: "Identificamos los partners de nuestra red que mejor se adaptan a tus necesidades específicas.",
-        step3_title: "Presentación",
-        step3_desc: "Te presentamos opciones curadas con propuestas y presupuestos. Tú decides con quién trabajar.",
-        step4_title: "Coordinación",
-        step4_desc: "Facilitamos la comunicación y coordinación entre tu equipo y los partners seleccionados.",
+        svc2_title: "Diseño de Branding para Eventos",
+        svc2_desc: "Creamos la identidad visual completa de tu evento: diseño de stands, merchandising, identidad visual, assets digitales, apps de evento y microsites específicos.",
+        svc2_short: "Stands, merchandising, identidad visual, diseño digital, apps y microsites de evento.",
+        svc2_items: "Diseño y producción de stands de feria,Merchandising y material corporativo,Identidad visual del evento,Diseño digital y redes sociales,App o microsite específico del evento",
 
-        /* About Page */
+        svc3_title: "Staffing Profesional para Stands y Eventos",
+        svc3_desc: "Personal cualificado y multilingüe para stands de feria y eventos corporativos privados. Formados, informados y representando tu marca con profesionalidad.",
+        svc3_short: "Personal cualificado y multilingüe para stands de feria y eventos corporativos privados.",
+        svc3_items: "Personal de stand de feria,Coordinadores de evento,Staff para eventos corporativos privados,Representantes de marca multilingüe",
+
+        svc4_title: "Transfer con Chóferes Profesionales",
+        svc4_desc: "Transfers puntuales y discretos con chóferes profesionales. Recogidas en aeropuerto, trayectos interurbanos y transporte a demanda para equipos directivos e invitados.",
+        svc4_short: "Recogidas en aeropuerto, trayectos interurbanos y transporte ejecutivo con chóferes profesionales.",
+        svc4_items: "Transfers aeropuerto,Trayectos interurbanos,Transporte ejecutivo VIP,Coordinación de flota para grupos",
+
+        svc5_title: "Música en Directo con Bandas Profesionales",
+        svc5_desc: "Música en directo para eventos corporativos. Desde tríos de jazz para cócteles hasta bandas completas. Coordinamos el formato adecuado para tu evento y tu audiencia.",
+        svc5_short: "Bandas profesionales para cócteles, cenas corporativas y entretenimiento en eventos privados.",
+        svc5_items: "Tríos de jazz y música de ambiente,Bandas para cenas corporativas,Entretenimiento para eventos privados,Coordinación de artistas y técnicos",
+
+        svc6_title: "Mobiliario, Alimentación y Catering",
+        svc6_desc: "Servicio completo de catering y suministro de mobiliario para stands de feria, eventos corporativos y funciones privadas — aprovisionado y coordinado localmente.",
+        svc6_short: "Catering y mobiliario para stands, eventos corporativos y actos privados.",
+        svc6_items: "Catering para stands de feria,Alquiler de mobiliario y decoración,Catering para eventos corporativos,Coordinación de alimentos y bebidas",
+
+        svc7_title: "Servicios MICE y Viajes Corporativos",
+        svc7_desc: "Gestión integral de viajes corporativos y coordinación MICE: vuelos, hoteles, logística terrestre y ejecución completa del evento en destino.",
+        svc7_short: "Vuelos, hoteles, logística completa y coordinación in situ para eventos MICE.",
+        svc7_items: "Gestión de viajes corporativos,Reservas de bloques hoteleros,Coordinación de vuelos,Logística terrestre completa,Ejecución integral del evento MICE",
+
+        /* ─── TRADE SHOW SUPPORT PAGE (/sectores) ─── */
+        sectors_badge: "Ferias y Eventos Corporativos",
+        sectors_title: "Soporte para Ferias y Eventos Corporativos en España",
+        sectors_sub: "Soporte operativo integral para empresas internacionales que participan en ferias o celebran eventos corporativos en España.",
+
+        tradeshow_problem_title: "Participar en una feria en otro país es operativamente complejo",
+        tradeshow_problem_body: "Coordinar proveedores locales, gestionar el stand, organizar transfers para tu equipo, reservar cenas corporativas, coordinar el staffing — todo desde la distancia. Cada pieza requiere un contacto diferente, en un idioma diferente, con estándares que no conoces. Nosotros te damos un único punto de coordinación local.",
+
+        tradeshow_what_title: "Qué cubrimos en tu feria o evento corporativo",
+
+        sector1_title: "Presencia en Stand",
+        sector1_obj: "Stand de feria con presencia de marca sólida y personal cualificado.",
+        sector1_pain: "Proveedores locales desconocidos, personal sin formación en marca, logística de montaje y catering sin coordinar.",
+        sector1_solution: "Coordinamos el diseño del stand, suministro de mobiliario y catering, staffing de feria y branding — todo bajo un único punto de contacto.",
+
+        sector2_title: "Hospitalidad Corporativa",
+        sector2_obj: "Cenas de empresa, eventos privados y entretenimiento para clientes y equipo.",
+        sector2_pain: "Desconocimiento de los mejores locales, dificultad para conseguir reservas, coordinación de transfers dispersa.",
+        sector2_solution: "Reservamos restaurantes de prestigio, organizamos transfers y coordinamos música en directo para tus eventos privados durante la feria.",
+
+        sector3_title: "Logística y Viaje Corporativo",
+        sector3_obj: "Transfers para el equipo, gestión de alojamiento y logística terrestre coordinada.",
+        sector3_pain: "Transfers improvisados, hoteles sin bloque negociado, coordinación de grupo fragmentada.",
+        sector3_solution: "Gestionamos los transfers profesionales, la negociación y reserva de bloques hoteleros y la coordinación de todo el desplazamiento del equipo.",
+
+        sector_objectives: "Objetivo",
+        sector_painpoints: "El problema",
+        sector_oursolution: "Cómo lo resolvemos",
+
+        tradeshow_cta_title: "¿Tienes una feria próxima en España?",
+        tradeshow_cta_body: "Cuéntanos el evento, las fechas y los servicios que necesitas. Nos encargamos del resto.",
+
+        /* ─── OUR APPROACH PAGE (/proceso) ─── */
+        process_badge: "Nuestro Enfoque",
+        process_title: "Cómo Trabajamos",
+        process_sub: "Un proceso estructurado en cinco fases para garantizar que cada detalle operativo esté bajo control.",
+
+        step1_title: "Briefing Inicial",
+        step1_desc: "Recopilamos todos los datos de tu evento: fechas, ubicación, servicios requeridos, tamaño del equipo y objetivos. Hacemos las preguntas correctas desde el principio.",
+        step1_short: "Recogemos tus requisitos y hacemos las preguntas correctas.",
+
+        step2_title: "Planificación Estratégica",
+        step2_desc: "Diseñamos el plan operativo completo: selección de proveedores, cronograma, estructura de comunicación y protocolos de contingencia.",
+        step2_short: "Construimos el plan: proveedores, timings y contingencias.",
+
+        step3_title: "Coordinación Local",
+        step3_desc: "Gestionamos cada detalle local antes de que tu equipo llegue: confirmación de proveedores, briefing de staff y verificación de que todo está en su lugar.",
+        step3_short: "Gestionamos cada detalle antes de que llegues.",
+
+        step4_title: "Ejecución in Situ",
+        step4_desc: "Estamos presentes durante el evento. Coordinamos, resolvemos imprevistos en tiempo real y garantizamos que cada servicio se desarrolle según el plan.",
+        step4_short: "Presentes, coordinando y resolviendo en tiempo real.",
+
+        step5_title: "Seguimiento y Cierre",
+        step5_desc: "Revisión post-evento, conciliación de facturación y un informe de aprendizajes para mejorar futuras ediciones.",
+        step5_short: "Revisión, conciliación de facturas y aprendizajes.",
+
+        process_cta: "Planifica tu próximo evento",
+
+        /* ─── ABOUT PAGE (/nosotros) ─── */
         about_badge: "Nosotros",
-        about_title: "Una red de partners especializada en eventos corporativos",
-        about_text1: "Growth 4 Events es tu punto de acceso a un ecosistema completo de proveedores especializados en eventos corporativos en España.",
-        about_text2: "No ejecutamos los servicios directamente. Nuestra propuesta de valor es conectarte con los mejores partners del mercado y facilitar la coordinación.",
-        about_text3: "Hemos construido relaciones con proveedores de primer nivel en staffing, DMC, catering, venues, branding, logística y más. Tú accedes a toda la red con un solo contacto.",
-        values_badge: "Valores",
-        value1_title: "Transparencia",
-        value1_desc: "Sin intermediaciones ocultas. Presentamos opciones claras y tú decides.",
-        value2_title: "Calidad",
-        value2_desc: "Trabajamos solo con partners que cumplen nuestros estándares de calidad y profesionalidad.",
-        value3_title: "Simplificación",
-        value3_desc: "Un solo contacto para acceder a múltiples servicios. Ahorramos tu tiempo y complejidad.",
+        about_title: "Partner operativo local para eventos corporativos en España",
+        about_text1: "Growth 4 Events ofrece soporte operativo directo para empresas internacionales que participan en ferias o celebran eventos corporativos en España.",
+        about_text2: "Gestionamos los servicios a través de una red local consolidada de proveedores con estándares corporativos: venues, staffing, branding, catering, transfers, música en directo y coordinación MICE.",
+        about_text3: "Nuestro valor está en el conocimiento local y la precisión operativa. Sabemos qué proveedores cumplen, qué espacios funcionan y cómo coordinar para que cuando tu equipo llegue, todo esté listo.",
+
+        values_badge: "Cómo operamos",
+        value1_title: "Precisión",
+        value1_desc: "Cada detalle confirmado, cada proveedor informado, cada incidencia anticipada. Operamos con los mismos estándares que exiges a tu propio equipo.",
+        value2_title: "Conocimiento local",
+        value2_desc: "Conocemos los venues, los proveedores y la logística del mercado de eventos en España. Ese conocimiento te ahorra tiempo, dinero y problemas.",
+        value3_title: "Soporte integrado",
+        value3_desc: "Todos los servicios a través de un único contacto operativo. Sin sobrecarga de coordinación, sin mensajes perdidos, sin sorpresas de última hora.",
 
         /* Contact Page */
         contact_badge: "Contacto",
-        contact_title: "Hablemos de tu próximo evento",
+        contact_title: "Planifiquemos tu próximo evento en España",
         form_name: "Nombre completo",
         form_company: "Empresa",
         form_email: "Email corporativo",
         form_phone: "Teléfono",
         form_event_type: "Tipo de evento",
-        form_event_placeholder: "Ej: Feria, Congreso, Lanzamiento...",
+        form_event_placeholder: "Ej: Feria, Congreso, Cena corporativa...",
         form_city: "Ciudad del evento",
         form_date: "Fecha aproximada",
         form_message: "Cuéntanos qué necesitas",
         form_privacy: "Acepto la",
         form_privacy_link: "política de privacidad",
         form_submit: "Enviar solicitud",
-        form_success_title: "¡Solicitud enviada!",
+        form_success_title: "Solicitud recibida",
         form_success_msg: "Te contactaremos en menos de 24h.",
         contact_phone_label: "Teléfono y WhatsApp",
         contact_location_label: "Ubicación",
@@ -160,88 +214,82 @@ export const dict: Record<Lang, Record<string, string>> = {
         cookie_decline: "Rechazar",
         cookie_learn_more: "Más información",
 
-        /* FAQ Section */
+        /* FAQ — SEO strategic */
         faq_badge: "Preguntas Frecuentes",
-        faq_title: "Todo lo que necesitas saber",
-        faq_q1: "¿Qué tipos de eventos corporativos organizáis?",
-        faq_a1: "Cubrimos ferias comerciales, congresos, eventos MICE (Meetings, Incentives, Conferences, Exhibitions), roadshows internacionales, presentaciones de producto y eventos de networking. Nuestra red de partners especializados nos permite gestionar desde eventos pequeños hasta grandes convenciones.",
-        faq_q2: "¿Trabajáis en toda España?",
-        faq_a2: "Sí, nuestra red de partners cubre toda España con proveedores locales en las principales ciudades: Madrid, Barcelona, Valencia, Sevilla, Bilbao y más. También gestionamos eventos internacionales en Europa y Latinoamérica.",
-        faq_q3: "¿Qué incluye vuestro servicio?",
-        faq_a3: "Conectamos con proveedores especializados en staffing (azafatas, personal de eventos), catering gourmet, logística integral, espacios y venues, branding y material gráfico, gestión DMC/MICE, y coordinación end-to-end. Un solo contacto para todo tu evento.",
-        faq_q4: "¿Cuánto tiempo necesitáis para organizar un evento?",
-        faq_a4: "Depende del tipo y tamaño del evento. Para eventos pequeños podemos gestionar en 2-3 semanas. Para ferias o congresos grandes, recomendamos 2-3 meses de antelación para asegurar los mejores proveedores y espacios.",
-        faq_q5: "¿Tenéis personal bilingüe disponible?",
-        faq_a5: "Sí, contamos con azafatas, coordinadores y personal de eventos bilingüe (español-inglés) y multilingüe para eventos internacionales. Perfecto para congresos y ferias con asistentes de diferentes países.",
+        faq_title: "Lo que necesitas saber",
+        faq_q1: "¿Qué incluye el soporte para eventos corporativos en España?",
+        faq_a1: "Gestionamos la coordinación operativa completa: reservas de venues y restaurantes, staffing profesional, diseño y producción de branding, transfers con chófer, música en directo, catering y suministro de mobiliario, y servicios MICE con gestión de viajes corporativos. Un único contacto local para todos los servicios.",
+        faq_q2: "¿Qué servicios de feria ofrecéis en España?",
+        faq_a2: "Cubrimos todos los aspectos operativos de la participación en feria: diseño y producción del stand, staffing de feria, suministro de mobiliario, catering en stand, transfers para el equipo, reservas de cenas corporativas y coordinación hotelera. Trabajamos en los principales recintos feriales de España.",
+        faq_q3: "¿Proporcionáis personal para stands en España?",
+        faq_a3: "Sí. Proveemos personal cualificado y multilingüe para stands de feria y eventos corporativos en toda España. Todo el personal recibe briefing sobre tu marca y está formado para representar tu empresa profesionalmente.",
+        faq_q4: "¿Gestionáis eventos MICE en España?",
+        faq_a4: "Sí. Gestionamos la coordinación MICE completa: logística de viajes corporativos (vuelos y hoteles), gestión de venues, catering, staffing y ejecución in situ. Gestionamos la capa operativa completa para que tu equipo se centre en los objetivos del evento.",
+        faq_q5: "¿Con cuánta antelación debemos contactaros?",
+        faq_a5: "Para ferias, recomendamos 4-8 semanas de antelación para eventos estándar. Para coordinaciones más complejas — delegación completa, viajes MICE, branding extenso — 2-3 meses nos permite asegurar los mejores proveedores y garantizar una ejecución correcta.",
 
-        /* Event Types Section */
-        event_types_title: "Tipos de Eventos que Gestionamos",
-        event_types_subtitle: "Nuestra red de partners especializados cubre todo el espectro de eventos corporativos en España y el extranjero.",
-        event_type1_title: "Ferias Comerciales y Trade Shows",
-        event_type1_desc: "Gestión integral de stands, personal especializado, logística y coordinación para ferias internacionales. Desde montaje hasta desmontaje.",
-        event_type2_title: "Congresos y Conferencias",
-        event_type2_desc: "Organización completa de congresos empresariales con gestión de espacios, catering, audiovisuales y coordinación de ponentes.",
-        event_type3_title: "Eventos MICE",
-        event_type3_desc: "Meetings, Incentives, Conferences, Exhibitions: gestión DMC profesional con proveedores cualificados y experiencia internacional.",
-        event_type4_title: "Roadshows y Lanzamientos",
-        event_type4_desc: "Eventos multiciudad para presentaciones de producto, con coordinación logística, personal y materiales en cada localización.",
-        event_type5_title: "Team Building",
-        event_type5_desc: "Actividades y eventos de incentivo para empresas: desde experiencias outdoor hasta eventos gastronómicos y culturales.",
-        event_type6_title: "Presentaciones Corporativas",
-        event_type6_desc: "Eventos de networking, presentaciones de resultados, juntas de accionistas y convenciones de ventas con producción a medida.",
+        /* Legacy keys retained for compatibility */
+        testimonials_badge: "Referencias",
+        testimonials_title: "Lo que dicen",
+        event_types_title: "Tipos de eventos",
+        event_types_subtitle: "Cobertura completa para eventos corporativos en España.",
     },
 
     en: {
         /* Nav */
         nav_home: "Home",
         nav_services: "Services",
-        nav_sectors: "Sectors",
-        nav_process: "Process",
+        nav_sectors: "Trade Show Support",
+        nav_process: "Our Approach",
         nav_about: "About",
         nav_contact: "Contact",
-        nav_cta: "Let's Talk",
+        nav_cta: "Get in Touch",
 
-        /* Hero */
-        hero_badge: "Your 360° event partner",
-        hero_title: "Connecting your event with the best partners",
-        hero_sub: "Access a specialized network of providers for every detail of your corporate event. No hassle, one single contact.",
-        hero_cta1: "Book a call",
-        hero_cta2: "View services",
+        /* Hero — Home */
+        hero_badge: "Growth 4 Events",
+        hero_title: "Strategic Operational Support for Corporate Events in Spain",
+        hero_sub: "We coordinate your trade show presence, corporate dinners, staffing, transfers, and more — so your team can focus on business.",
+        hero_cta1: "Plan Your Event",
+        hero_cta2: "View Services",
+
+        /* Home — Problem / Solution */
+        home_problem_title: "Coordinating an event in another country has hidden costs",
+        home_problem_body: "Unfamiliar vendors, complex local logistics, language gaps, and compliance requirements you don't know. Every decision takes longer when you're not on the ground. We already are.",
+        home_solution_intro: "One local partner. Complete operational control. No coordination overhead.",
+
+        /* Home — Services section */
+        home_services_title: "Integrated support, structured by service",
+        home_services_cta_label: "All services",
+        home_services_cta_copy: "Every service coordinated through a single local point of contact.",
+
+        /* Home — How We Work teaser */
+        home_process_title: "A clear process from brief to close",
+        process_link: "See our full approach",
 
         /* Pillars */
-        pillars_badge: "Partner Network",
-        pillars_title: "A complete ecosystem for corporate events",
-        pillar1_title: "Specialized Partner Network",
-        pillar1_desc: "We connect your company with the best staffing, DMC, MICE, transfers, catering, furniture, branding, and exclusive venue providers.",
+        pillars_badge: "Why it matters",
+        pillars_title: "Coordinating international events requires a local partner",
+        pillar1_title: "Coordinating in another country requires a local partner",
+        pillar1_desc: "A network built over years. Verified vendors, known venues, and local logistics experience. When your team lands in Spain, everything is already in place.",
 
         /* Audience */
         audience_badge: "Who it's for",
-        audience_title: "Does your company organize corporate events in Spain?",
-        audience_sub: "If you need fast access to specialized providers without managing multiple contacts, we're here.",
-        audience1_title: "Trade Fairs & Congresses",
-        audience1_desc: "Companies participating in trade fairs and international congresses.",
-        audience2_title: "MICE Events",
-        audience2_desc: "Corporate meetings, incentives, and product launches.",
-        audience3_title: "Roadshows",
-        audience3_desc: "Traveling events that need consistent replication across multiple cities.",
-
-        /* Testimonials */
-        testimonials_badge: "Testimonials",
-        testimonials_title: "They trust us",
-        testimonial1_quote: "Growth 4 Events connected us with exceptional partners. Everything coordinated, no headaches.",
-        testimonial1_author: "Marketing Director",
-        testimonial1_company: "Tech Company",
-        testimonial2_quote: "One single contact for our entire roadshow. It radically simplified our logistics.",
-        testimonial2_author: "Event Manager",
-        testimonial2_company: "Multinational",
+        audience_title: "Does your company attend trade shows or run corporate events in Spain?",
+        audience_sub: "International companies that need local operational coordination without the overhead of managing it from abroad.",
+        audience1_title: "Trade Shows & Exhibitions",
+        audience1_desc: "International companies with stands at trade fairs that need staffing, branding, catering, and local logistics in Spain.",
+        audience2_title: "Corporate Events",
+        audience2_desc: "Companies organizing corporate dinners, team building activities, or internal events in Spain.",
+        audience3_title: "MICE & Corporate Travel",
+        audience3_desc: "Organizations coordinating corporate travel, incentive programs, and integrated event management in Spain.",
 
         /* CTA */
-        cta_title: "Ready to simplify your next event?",
-        cta_sub: "Book a 20-minute strategic call. No commitment.",
-        cta_btn: "Book your call",
+        cta_title: "Planning an event in Spain? Let's coordinate it properly.",
+        cta_sub: "Tell us what you need. We'll take it from there.",
+        cta_btn: "Get in Touch",
 
         /* Footer */
-        footer_tagline: "Your 360° corporate event partner in Spain.",
+        footer_tagline: "Strategic operational support for corporate events in Spain.",
         footer_nav: "Navigation",
         footer_contact: "Contact",
         footer_legal: "Legal",
@@ -250,121 +298,141 @@ export const dict: Record<Lang, Record<string, string>> = {
         footer_cookies: "Cookies",
         footer_rights: "All rights reserved.",
 
-        /* Services Page */
+        /* ─── SERVICES PAGE — 7 exact services ─── */
         services_badge: "Services",
-        services_title: "One point of contact for all your event needs",
-        services_sub: "Access our network of specialized partners. We connect you with the best, you decide.",
-        svc1_title: "Staffing & Personnel",
-        svc1_desc: "Hostesses, stand personnel, interpreters, venue coordinators, and specialized teams for your event.",
-        svc1_items: "Stand and reception personnel,Hostesses and promoters,Event coordinators",
-        svc2_title: "DMC & MICE",
-        svc2_desc: "Full management of corporate events, incentives, VIP transfers, and group experiences.",
-        svc2_items: "Corporate incentive management,VIP transfers and logistics,Team building activities,Congress organization",
-        svc3_title: "Catering & Venues",
-        svc3_desc: "Exclusive restaurant bookings, gourmet catering, furniture rental, and event decoration.",
-        svc3_items: "Gourmet catering,Furniture and decoration rental,Exclusive venue reservations,Live music groups,Venue and location management",
-        svc4_title: "Branding & Logistics",
-        svc4_desc: "Event branding production, corporate flight bookings, all-in-one ticketing management, and end-to-end logistics coordination.",
-        svc4_items: "Branding and graphic materials,Corporate flight bookings,All-in-one ticketing management,Full logistics coordination",
+        services_title: "Integrated operational support for your event in Spain",
+        services_sub: "Seven services. One local point of contact.",
 
-        /* Sectors Page */
-        sectors_badge: "Sectors",
-        sectors_title: "Real use cases",
-        sectors_sub: "Every type of event requires specific partners. These are the situations where we add the most value.",
-        sector1_title: "Trade Fairs & Exhibitions",
-        sector1_obj: "Stand with qualified personnel, flawless logistics, and consistent brand presence.",
-        sector1_pain: "Multiple vendors, lack of coordination, untrained staff.",
-        sector1_solution: "We connect you with specialized staffing, catering, furniture, and branding through a single point of contact.",
-        sector2_title: "Corporate Events",
-        sector2_obj: "Create memorable experiences with premium catering, venue, and production.",
-        sector2_pain: "Disconnected vendors, opaque budgets, lack of control.",
-        sector2_solution: "Direct access to our premium partner network with transparent pricing and central coordination.",
-        sector3_title: "Multi-City Roadshows",
-        sector3_obj: "Replicate consistent experience across multiple cities with local partners.",
-        sector3_pain: "Lack of standardization, fragmented logistics, uneven quality.",
-        sector3_solution: "Network of certified partners throughout Spain. Same standard, local adaptation.",
-        sector_objectives: "Objectives",
-        sector_painpoints: "Pain Points",
-        sector_oursolution: "Our Solution",
+        svc1_title: "Venue & Restaurant Bookings",
+        svc1_desc: "We secure the right venues for corporate dinners, internal events, and team building activities — premium restaurants and exclusive spaces selected for your brief.",
+        svc1_short: "Premium restaurants and venues for corporate dinners, team building, and private events.",
+        svc1_items: "Corporate dinner reservations,Private event venues,Team building locations,Exclusive restaurant bookings",
 
-        /* Process Page */
-        process_badge: "Process",
-        process_title: "How we work",
-        process_sub: "A transparent process designed to connect you with the right partners.",
-        step1_title: "Briefing",
-        step1_desc: "Tell us what you need: event type, city, date, required services, and approximate budget.",
-        step2_title: "Matching",
-        step2_desc: "We identify the partners from our network that best fit your specific needs.",
-        step3_title: "Presentation",
-        step3_desc: "We present curated options with proposals and budgets. You decide who to work with.",
-        step4_title: "Coordination",
-        step4_desc: "We facilitate communication and coordination between your team and the selected partners.",
+        svc2_title: "Event Branding Design",
+        svc2_desc: "Custom branding for every touchpoint of your event — stand design and production, merchandising, visual identity, digital assets, event apps, and dedicated microsites.",
+        svc2_short: "Stands, merchandising, visual identity, digital design, event apps and microsites.",
+        svc2_items: "Exhibition stand design and production,Merchandising and branded materials,Event visual identity,Digital design and social assets,Event app or dedicated microsite",
 
-        /* About Page */
-        about_badge: "About Us",
-        about_title: "A specialized partner network for corporate events",
-        about_text1: "Growth 4 Events is your access point to a complete ecosystem of specialized providers for corporate events in Spain.",
-        about_text2: "We don't execute services directly. Our value proposition is connecting you with the best partners in the market and facilitating coordination.",
-        about_text3: "We've built relationships with top-tier providers in staffing, DMC, catering, venues, branding, logistics, and more. You access the entire network with a single contact.",
-        values_badge: "Values",
-        value1_title: "Transparency",
-        value1_desc: "No hidden intermediation. We present clear options and you decide.",
-        value2_title: "Quality",
-        value2_desc: "We only work with partners that meet our quality and professionalism standards.",
-        value3_title: "Simplification",
-        value3_desc: "One single contact to access multiple services. We save you time and complexity.",
+        svc3_title: "Professional Stand & Event Staffing",
+        svc3_desc: "Qualified, multilingual staff for exhibition stands and private corporate events. Briefed on your brand, trained for professional representation, and managed on the ground.",
+        svc3_short: "Qualified, multilingual staff for exhibition stands and private corporate events in Spain.",
+        svc3_items: "Exhibition stand personnel,Event coordinators,Private corporate event staff,Multilingual brand representatives",
+
+        svc4_title: "Professional Driver Transfers",
+        svc4_desc: "Reliable, discreet transfers with professional chauffeurs. Airport pickups, inter-city routes, and on-call transport for executive teams and guests throughout your event.",
+        svc4_short: "Airport pickups, inter-city routes, and on-call executive transport with professional chauffeurs.",
+        svc4_items: "Airport transfers,Inter-city routes,Executive VIP transfers,Group fleet coordination",
+
+        svc5_title: "Live Music with Professional Bands",
+        svc5_desc: "Professional live music for corporate events — jazz trios for cocktail hours to full bands for dinners. We coordinate the right sound for your event format and audience.",
+        svc5_short: "Professional bands for cocktail hours, corporate dinners, and private event entertainment.",
+        svc5_items: "Jazz and cocktail trios,Corporate dinner bands,Private event entertainment,Artist and technical coordination",
+
+        svc6_title: "Furniture, Food & Catering Supply",
+        svc6_desc: "Full catering services and furniture supply for trade show stands, corporate events, and private functions — sourced, coordinated, and delivered locally.",
+        svc6_short: "Furniture and catering for exhibition stands, corporate events, and private functions.",
+        svc6_items: "Trade show stand catering,Furniture and décor rental,Corporate event catering,Food and beverage coordination",
+
+        svc7_title: "MICE Services & Corporate Travel",
+        svc7_desc: "Full-service corporate travel management and MICE coordination — flights, hotels, ground logistics, and complete on-site event execution in Spain.",
+        svc7_short: "Flights, hotels, full logistics and on-the-ground coordination for MICE events in Spain.",
+        svc7_items: "Corporate travel management,Hotel block reservations,Flight coordination,Complete ground logistics,Full MICE event execution",
+
+        /* ─── TRADE SHOW SUPPORT PAGE (/sectores) ─── */
+        sectors_badge: "Trade Show & Corporate Event Support",
+        sectors_title: "Trade Show & Corporate Event Support in Spain",
+        sectors_sub: "Operational support for international companies attending trade fairs and organizing corporate events in Spain.",
+
+        tradeshow_problem_title: "Attending a trade show abroad is operationally complex",
+        tradeshow_problem_body: "Coordinating local vendors, managing your stand, arranging transfers for your team, booking corporate dinners, briefing staff — all from a distance. Each piece requires a different contact, in a different language, with standards you don't know. We give you a single local coordination point for all of it.",
+
+        tradeshow_what_title: "What we cover at your trade show or corporate event",
+
+        sector1_title: "Stand Presence",
+        sector1_obj: "A complete, professional stand with solid brand presence and qualified staff.",
+        sector1_pain: "Unknown local vendors, unbriefed staff, uncoordinated stand logistics and catering.",
+        sector1_solution: "We coordinate stand design, furniture and catering supply, exhibition staffing, and branding — all through a single contact.",
+
+        sector2_title: "Corporate Hospitality",
+        sector2_obj: "Corporate dinners, private events, and entertainment for clients and team.",
+        sector2_pain: "Not knowing the best venues, difficulty securing last-minute reservations, fragmented transfer coordination.",
+        sector2_solution: "We book premium restaurants, coordinate transfers, and arrange live music for your private events during the fair.",
+
+        sector3_title: "Logistics & Corporate Travel",
+        sector3_obj: "Team transfers, accommodation coordination, and organized ground logistics.",
+        sector3_pain: "Improvised transfers, no negotiated hotel block, fragmented group coordination.",
+        sector3_solution: "We manage professional transfers, negotiate and secure hotel blocks, and coordinate your entire team's ground logistics.",
+
+        sector_objectives: "Objective",
+        sector_painpoints: "The problem",
+        sector_oursolution: "How we solve it",
+
+        tradeshow_cta_title: "Do you have an upcoming trade show or event in Spain?",
+        tradeshow_cta_body: "Tell us the event, the dates, and the services you need. We'll coordinate the rest.",
+
+        /* ─── OUR APPROACH PAGE (/proceso) ─── */
+        process_badge: "Our Approach",
+        process_title: "How We Work",
+        process_sub: "A structured five-phase process to ensure every operational detail is under control.",
+
+        step1_title: "Initial Brief",
+        step1_desc: "You share your event requirements: dates, location, services needed, team size, and objectives. We ask the right questions from the start.",
+        step1_short: "You share requirements. We ask the right questions.",
+
+        step2_title: "Strategic Planning",
+        step2_desc: "We design the full operational plan — vendor selection, timelines, communication structure, and contingency protocols.",
+        step2_short: "We build the plan: vendors, timelines, contingencies.",
+
+        step3_title: "Local Coordination",
+        step3_desc: "We handle every local detail before your team arrives — confirming vendors, briefing staff, and ensuring everything is in place.",
+        step3_short: "We handle every detail before you arrive.",
+
+        step4_title: "On-site Execution",
+        step4_desc: "We are present throughout the event. Coordinating, solving problems in real time, and ensuring every service runs on schedule.",
+        step4_short: "Present, coordinating, and solving in real time.",
+
+        step5_title: "Follow-up & Close",
+        step5_desc: "Post-event review, billing reconciliation, and a debrief to capture learnings for future events.",
+        step5_short: "Review, reconciliation, and learnings for next time.",
+
+        process_cta: "Plan your next event",
+
+        /* ─── ABOUT PAGE (/nosotros) ─── */
+        about_badge: "About",
+        about_title: "Local operational partner for corporate events in Spain",
+        about_text1: "Growth 4 Events provides direct operational support for international companies attending trade shows and organizing corporate events in Spain.",
+        about_text2: "We deliver services through a tightly managed local network built for corporate standards: venues, staffing, branding, catering, transfers, live music, and MICE coordination.",
+        about_text3: "Our value is precision and local knowledge. We know the venues, the vendors, and the logistics. When your team lands in Spain, everything is already in place.",
+
+        values_badge: "How we operate",
+        value1_title: "Precision",
+        value1_desc: "Every detail confirmed, every vendor briefed, every contingency anticipated. We operate with the same standards you expect from your own team.",
+        value2_title: "Local Knowledge",
+        value2_desc: "We know the venues, vendors, and logistics of the Spanish event market. That knowledge saves you time, money, and problems.",
+        value3_title: "Integrated Support",
+        value3_desc: "All services through one operational contact. No coordination overhead, no lost messages, no last-minute surprises.",
 
         /* Contact Page */
         contact_badge: "Contact",
-        contact_title: "Let's talk about your next event",
+        contact_title: "Let's plan your next event in Spain",
         form_name: "Full name",
         form_company: "Company",
         form_email: "Corporate email",
         form_phone: "Phone",
         form_event_type: "Event type",
-        form_event_placeholder: "E.g.: Trade Fair, Congress, Launch...",
+        form_event_placeholder: "E.g.: Trade Fair, Congress, Corporate Dinner...",
         form_city: "Event city",
         form_date: "Approximate date",
         form_message: "Tell us what you need",
         form_privacy: "I accept the",
         form_privacy_link: "privacy policy",
         form_submit: "Send request",
-        form_success_title: "Request sent!",
+        form_success_title: "Request received",
         form_success_msg: "We'll contact you within 24h.",
         contact_phone_label: "Phone & WhatsApp",
         contact_location_label: "Location",
         contact_location_value: "Spain",
         contact_whatsapp: "WhatsApp",
-
-        /* FAQ Section */
-        faq_badge: "Frequently Asked Questions",
-        faq_title: "Everything you need to know",
-        faq_q1: "What types of corporate events do you organize?",
-        faq_a1: "We cover trade shows, congresses, MICE events (Meetings, Incentives, Conferences, Exhibitions), international roadshows, product launches, and networking events. Our network of specialized partners allows us to manage everything from small events to large conventions.",
-        faq_q2: "Do you work throughout Spain?",
-        faq_a2: "Yes, our partner network covers all of Spain with local suppliers in major cities: Madrid, Barcelona, Valencia, Seville, Bilbao, and more. We also manage international events in Europe and Latin America.",
-        faq_q3: "What does your service include?",
-        faq_a3: "We connect you with specialized suppliers in staffing (hostesses, event personnel), gourmet catering, comprehensive logistics, venues and spaces, branding and graphic materials, DMC/MICE management, and end-to-end coordination. One single contact for your entire event.",
-        faq_q4: "How much time do you need to organize an event?",
-        faq_a4: "It depends on the type and size of the event. For small events we can manage in 2-3 weeks. For large fairs or congresses, we recommend 2-3 months in advance to ensure the best suppliers and spaces.",
-        faq_q5: "Do you have bilingual staff available?",
-        faq_a5: "Yes, we have bilingual (Spanish-English) and multilingual hostesses, coordinators, and event staff for international events. Perfect for congresses and fairs with attendees from different countries.",
-
-        /* Event Types Section */
-        event_types_title: "Types of Events We Manage",
-        event_types_subtitle: "Our network of specialized partners covers the full spectrum of corporate events in Spain and abroad.",
-        event_type1_title: "Trade Shows and Exhibitions",
-        event_type1_desc: "Comprehensive management of booths, specialized staff, logistics, and coordination for international trade shows. From setup to teardown.",
-        event_type2_title: "Congresses and Conferences",
-        event_type2_desc: "Complete organization of corporate congresses with venue management, catering, audiovisual coordination, and speaker coordination.",
-        event_type3_title: "MICE Events",
-        event_type3_desc: "Meetings, Incentives, Conferences, Exhibitions: professional DMC management with qualified suppliers and international experience.",
-        event_type4_title: "Roadshows and Launches",
-        event_type4_desc: "Multi-city events for product presentations, with logistical coordination, staff, and materials at each location.",
-        event_type5_title: "Team Building",
-        event_type5_desc: "Corporate incentive activities and events: from outdoor experiences to gastronomic and cultural events.",
-        event_type6_title: "Corporate Presentations",
-        event_type6_desc: "Networking events, results presentations, shareholder meetings, and sales conventions with customized production.",
 
         /* Cookies */
         cookie_title: "We use cookies",
@@ -372,6 +440,26 @@ export const dict: Record<Lang, Record<string, string>> = {
         cookie_accept: "Accept",
         cookie_decline: "Decline",
         cookie_learn_more: "Learn more",
+
+        /* FAQ — SEO strategic */
+        faq_badge: "Frequently Asked Questions",
+        faq_title: "What you need to know",
+        faq_q1: "What is corporate event support in Spain?",
+        faq_a1: "We provide end-to-end operational coordination for international companies attending trade shows and organizing corporate events in Spain. This covers venue and restaurant bookings, professional staffing, event branding design, professional driver transfers, live music, catering and furniture supply, and MICE travel coordination — all managed locally through a single contact.",
+        faq_q2: "What trade show services do you provide in Spain?",
+        faq_a2: "We cover all operational aspects of trade show participation: stand branding and production, exhibition staffing, furniture supply, stand catering, transfers for your team, corporate dinner reservations, and hotel block coordination. We work across all major Spanish fair venues including IFEMA (Madrid), Fira Barcelona, and others.",
+        faq_q3: "Do you provide exhibition staffing in Spain?",
+        faq_a3: "Yes. We provide qualified, multilingual stand staff and event coordinators for exhibitions and trade fairs across Spain. All staff receive a brand briefing and are trained to represent your company professionally throughout the event.",
+        faq_q4: "Can you manage MICE events in Spain?",
+        faq_a4: "Yes. We handle full MICE coordination: corporate travel logistics (flights and hotels), event venue management, catering, staffing, and complete on-site execution. We manage the full operational layer so your team can focus entirely on content and business objectives.",
+        faq_q5: "How far in advance should I contact you?",
+        faq_a5: "For trade shows, we recommend 4–8 weeks in advance for standard events. For larger coordination — full delegation management, MICE travel, complex branding production — 2–3 months gives us time to secure the best vendors and ensure proper execution.",
+
+        /* Legacy keys retained for compatibility */
+        testimonials_badge: "References",
+        testimonials_title: "What they say",
+        event_types_title: "Event types",
+        event_types_subtitle: "Full coverage for corporate events in Spain.",
     },
 };
 
@@ -385,7 +473,7 @@ interface LangContextType {
 }
 
 export const LangContext = createContext<LangContextType>({
-    lang: "es",
+    lang: "en",
     setLang: () => { },
     t: (k) => k,
 });
@@ -395,7 +483,7 @@ export function useLanguage() {
 }
 
 export function useLangState(): LangContextType {
-    const [lang, setLangState] = useState<Lang>("es");
+    const [lang, setLangState] = useState<Lang>("en");
 
     useEffect(() => {
         const stored = localStorage.getItem("g4e-lang") as Lang | null;

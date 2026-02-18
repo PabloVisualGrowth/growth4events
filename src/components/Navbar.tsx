@@ -8,8 +8,8 @@ import { useLanguage } from "@/lib/i18n";
 
 const links = [
     { key: "nav_home", href: "/events" },
-    { key: "nav_services", href: "/servicios" },
     { key: "nav_sectors", href: "/sectores" },
+    { key: "nav_services", href: "/servicios" },
     { key: "nav_process", href: "/proceso" },
     { key: "nav_about", href: "/nosotros" },
     { key: "nav_contact", href: "/contacto" },
@@ -29,7 +29,7 @@ export function Navbar() {
 
     return (
         <>
-            {/* Navbar — Full width strip, drops to vertical center on scroll */}
+            {/* Navbar */}
             <nav
                 className={`fixed left-0 right-0 z-50 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${isScrolled ? "top-[50%] -translate-y-1/2" : "top-0"
                     }`}
@@ -40,7 +40,7 @@ export function Navbar() {
                         : "bg-transparent text-black py-4 px-4 md:px-8"
                         }`}
                 >
-                    {/* Left — Logo (larger) */}
+                    {/* Logo */}
                     <div className="flex items-center gap-2 relative w-36 h-7 md:w-48 md:h-9 shrink-0">
                         <Link href="/events" className="hover:opacity-70 transition-opacity w-full h-full relative">
                             <Image
@@ -53,8 +53,8 @@ export function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Center — Links (Desktop) */}
-                    <div className="hidden md:flex gap-8 items-center justify-center absolute left-1/2 -translate-x-1/2">
+                    {/* Center Links (Desktop) */}
+                    <div className="hidden md:flex gap-6 items-center justify-center absolute left-1/2 -translate-x-1/2">
                         {links.map((link) => {
                             const isActive =
                                 link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -74,7 +74,7 @@ export function Navbar() {
                         })}
                     </div>
 
-                    {/* Right — Lang toggle + CTA */}
+                    {/* Right: Lang + CTA */}
                     <div className="flex items-center gap-6 shrink-0 justify-end">
                         <span className="hidden md:flex gap-4 opacity-60 text-black">
                             <button
@@ -107,7 +107,7 @@ export function Navbar() {
                 </div>
             </nav>
 
-            {/* Mobile Menu Overlay */}
+            {/* Mobile Menu */}
             <div
                 className={`fixed inset-0 z-[60] bg-black text-white transition-transform duration-500 flex flex-col p-8 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
@@ -120,7 +120,7 @@ export function Navbar() {
                         Close
                     </button>
                 </div>
-                <div className="flex-1 flex flex-col justify-center gap-8 text-4xl font-bold uppercase tracking-tighter">
+                <div className="flex-1 flex flex-col justify-center gap-8 text-3xl font-bold uppercase tracking-tighter">
                     {links.map((link) => (
                         <Link
                             key={link.key}

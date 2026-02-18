@@ -1,13 +1,23 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sectores de Eventos | Ferias, Congresos, Roadshows | Growth4Events",
+    title: "Trade Show & Corporate Event Support in Spain | Growth 4 Events",
     description:
-        "Experiencia en ferias comerciales, eventos MICE, roadshows y marketing de eventos en toda España. Partners especializados por sector.",
-    keywords: ["ferias comerciales", "eventos MICE España", "roadshows internacionales", "congresos empresariales"],
+        "Operational support for international companies attending trade fairs and organizing corporate events in Spain. Stand presence, corporate hospitality, logistics, and MICE coordination.",
+    keywords: [
+        "trade show support Spain",
+        "trade show services Spain",
+        "corporate event support Spain",
+        "exhibition support Spain",
+        "trade fair services Spain",
+        "corporate hospitality Spain",
+        "IFEMA event support",
+        "Fira Barcelona services",
+    ],
     openGraph: {
-        title: "Sectores de Eventos | Growth4Events",
-        description: "Ferias, congresos, MICE y roadshows con partners especializados",
+        title: "Trade Show & Corporate Event Support in Spain | Growth 4 Events",
+        description:
+            "One local partner for your trade show in Spain — stand branding, staffing, catering, corporate dinners, and team logistics.",
         type: "website",
     },
 };

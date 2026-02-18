@@ -18,10 +18,13 @@ export default function ServiciosPage() {
     }, []);
 
     const services = [
-        { key: "svc1", image: "/images/eventos-3.jpg", alt: "Personal de staffing profesional en evento corporativo" },
-        { key: "svc2", image: "/images/eventos-2.jpg", alt: "Gestión DMC para eventos MICE profesionales" },
-        { key: "svc3", image: "/images/eventos-4.jpg", alt: "Catering gourmet para eventos empresariales" },
-        { key: "svc4", image: "/images/eventos-6.jpg", alt: "Branding y señalética para evento corporativo" },
+        { key: "svc1", image: "/images/eventos-8.jpg", alt: "Premium venue and restaurant reservations for corporate events in Spain", id: "venues" },
+        { key: "svc2", image: "/images/eventos-6.jpg", alt: "Event branding design — stands, merchandising, visual identity Spain", id: "branding" },
+        { key: "svc3", image: "/images/eventos-3.jpg", alt: "Professional exhibition staffing and event staff Spain", id: "staffing" },
+        { key: "svc4", image: "/images/eventos-4.jpg", alt: "Professional driver transfers for corporate events Spain", id: "transfers" },
+        { key: "svc5", image: "/images/eventos-14.jpg", alt: "Live music with professional bands for corporate events Spain", id: "music" },
+        { key: "svc6", image: "/images/eventos-2.jpg", alt: "Furniture, food and catering supply for trade shows Spain", id: "catering" },
+        { key: "svc7", image: "/images/eventos-11.jpg", alt: "MICE services and corporate travel organization Spain", id: "mice" },
     ];
 
     return (
@@ -30,29 +33,28 @@ export default function ServiciosPage() {
 
             {/* HEADER */}
             <header className="pt-32 pb-20 px-6 md:px-12 border-b border-black">
-                <div className="max-w-4xl">
-                    <span className="text-xs font-bold uppercase tracking-widest block mb-4">
-                        {t("services_sub")}
-                    </span>
-                    <h1 className="type-display-huge text-6xl md:text-9xl leading-[0.8] mb-8">
+                <div className="max-w-5xl">
+                    <span className="text-xs font-bold uppercase tracking-widest block mb-6 text-[#0cc0df]">
                         {t("services_badge")}
-                    </h1>
-                    <p className="font-serif italic text-xl max-w-xl pl-6 border-l border-black">
+                    </span>
+                    <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-[1.0] mb-8">
                         {t("services_title")}
+                    </h1>
+                    <p className="text-lg leading-relaxed max-w-xl text-gray-600 pl-6 border-l border-black">
+                        {t("services_sub")}
                     </p>
                 </div>
             </header>
 
-            {/* SERVICES GRID - Exactly as diagram: alternating texto/foto layout, no horizontal borders */}
+            {/* SERVICES — Alternating text/image layout */}
             <section className="border-b border-black">
                 {services.map((svc, index) => (
-                    <div key={svc.key} className="grid grid-cols-1 md:grid-cols-3 group">
+                    <div key={svc.key} id={svc.id} className="grid grid-cols-1 md:grid-cols-3 group border-b border-black last:border-b-0">
 
-                        {/* Service 1 & 3: texto (2 cols) | foto (1 col) */}
+                        {/* Even index: text (2/3) | image (1/3) */}
                         {index % 2 === 0 && (
                             <>
-                                {/* Texto - 2/3 width */}
-                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 md:border-r border-black transition-colors duration-700 hover:bg-[#0cc0df] hover:text-white">
+                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 md:border-r border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white">
                                     <motion.div
                                         initial={false}
                                         whileInView={isMobile ? { backgroundColor: "#0cc0df", color: "#ffffff" } : {}}
@@ -61,14 +63,14 @@ export default function ServiciosPage() {
                                     />
                                     <div className="relative z-10 pointer-events-none">
                                         <div className="flex items-center gap-4 mb-6">
-                                            <span className="text-xs font-bold uppercase tracking-widest border border-black group-hover:border-white px-3 py-1 rounded-full">
+                                            <span className="text-xs font-bold uppercase tracking-widest border border-current px-3 py-1 rounded-full opacity-50 group-hover:opacity-80">
                                                 {String(index + 1).padStart(2, "0")}
                                             </span>
                                         </div>
-                                        <h2 className="type-display-huge text-4xl md:text-6xl mb-6">
+                                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
                                             {t(`${svc.key}_title`)}
                                         </h2>
-                                        <p className="font-sans text-base md:text-lg opacity-80 leading-relaxed max-w-xl mb-6">
+                                        <p className="text-base leading-relaxed max-w-xl mb-6 opacity-80">
                                             {t(`${svc.key}_desc`)}
                                         </p>
                                         <ul className="space-y-3">
@@ -82,7 +84,6 @@ export default function ServiciosPage() {
                                     </div>
                                 </div>
 
-                                {/* Foto - 1/3 width */}
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 border-black">
                                     <motion.div
                                         initial={{ filter: "grayscale(100%)" }}
@@ -102,10 +103,9 @@ export default function ServiciosPage() {
                             </>
                         )}
 
-                        {/* Service 2 & 4: foto (1 col) | texto (2 cols) */}
+                        {/* Odd index: image (1/3) | text (2/3) */}
                         {index % 2 === 1 && (
                             <>
-                                {/* Foto - 1/3 width */}
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 md:border-r border-black md:order-1">
                                     <motion.div
                                         initial={{ filter: "grayscale(100%)" }}
@@ -123,8 +123,7 @@ export default function ServiciosPage() {
                                     </motion.div>
                                 </div>
 
-                                {/* Texto - 2/3 width */}
-                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 border-black transition-colors duration-700 hover:bg-[#0cc0df] hover:text-white md:order-2">
+                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white md:order-2">
                                     <motion.div
                                         initial={false}
                                         whileInView={isMobile ? { backgroundColor: "#0cc0df", color: "#ffffff" } : {}}
@@ -133,14 +132,14 @@ export default function ServiciosPage() {
                                     />
                                     <div className="relative z-10 pointer-events-none">
                                         <div className="flex items-center gap-4 mb-6">
-                                            <span className="text-xs font-bold uppercase tracking-widest border border-black group-hover:border-white px-3 py-1 rounded-full">
+                                            <span className="text-xs font-bold uppercase tracking-widest border border-current px-3 py-1 rounded-full opacity-50 group-hover:opacity-80">
                                                 {String(index + 1).padStart(2, "0")}
                                             </span>
                                         </div>
-                                        <h2 className="type-display-huge text-4xl md:text-6xl mb-6">
+                                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
                                             {t(`${svc.key}_title`)}
                                         </h2>
-                                        <p className="font-sans text-base md:text-lg opacity-80 leading-relaxed max-w-xl mb-6">
+                                        <p className="text-base leading-relaxed max-w-xl mb-6 opacity-80">
                                             {t(`${svc.key}_desc`)}
                                         </p>
                                         <ul className="space-y-3">
@@ -157,6 +156,28 @@ export default function ServiciosPage() {
                         )}
                     </div>
                 ))}
+            </section>
+
+            {/* CTA */}
+            <section className="py-20 md:py-28 px-6 md:px-12 border-b border-black">
+                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">
+                            {t("cta_title")}
+                        </h2>
+                        <p className="text-base leading-relaxed text-gray-600">
+                            {t("cta_sub")}
+                        </p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <Link href="/contacto" className="btn-concept-filled">
+                            {t("hero_cta1")}
+                        </Link>
+                        <Link href="/proceso" className="btn-concept">
+                            {t("process_link")}
+                        </Link>
+                    </div>
+                </div>
             </section>
         </div>
     );
