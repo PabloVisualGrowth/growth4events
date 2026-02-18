@@ -49,7 +49,7 @@ export default function ServiciosPage() {
             {/* SERVICES — Alternating text/image layout */}
             <section className="border-b border-black">
                 {services.map((svc, index) => (
-                    <div key={svc.key} id={svc.id} className="grid grid-cols-1 md:grid-cols-3 group border-b border-black last:border-b-0">
+                    <div key={svc.key} id={svc.id} className="grid grid-cols-1 md:grid-cols-3 group border-b border-black last:border-b-0 md:min-h-[450px]">
 
                         {/* Even index: text (2/3) | image (1/3) */}
                         {index % 2 === 0 && (
@@ -85,20 +85,14 @@ export default function ServiciosPage() {
                                 </div>
 
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 border-black">
-                                    <motion.div
-                                        initial={{ filter: "grayscale(100%)" }}
-                                        whileInView={isMobile ? { filter: "grayscale(0%)" } : {}}
-                                        whileHover={{ filter: "grayscale(0%)" }}
-                                        viewport={{ amount: 0.2, margin: "-30% 0px -30% 0px" }}
-                                        className="absolute inset-0"
-                                    >
+                                    <div className="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-700">
                                         <Image
                                             src={svc.image}
                                             alt={svc.alt}
                                             fill
                                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                                         />
-                                    </motion.div>
+                                    </div>
                                 </div>
                             </>
                         )}
@@ -107,20 +101,14 @@ export default function ServiciosPage() {
                         {index % 2 === 1 && (
                             <>
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 md:border-r border-black md:order-1">
-                                    <motion.div
-                                        initial={{ filter: "grayscale(100%)" }}
-                                        whileInView={isMobile ? { filter: "grayscale(0%)" } : {}}
-                                        whileHover={{ filter: "grayscale(0%)" }}
-                                        viewport={{ amount: 0.2, margin: "-30% 0px -30% 0px" }}
-                                        className="absolute inset-0"
-                                    >
+                                    <div className="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-700">
                                         <Image
                                             src={svc.image}
                                             alt={svc.alt}
                                             fill
                                             className="object-cover transition-transform duration-1000 group-hover:scale-105"
                                         />
-                                    </motion.div>
+                                    </div>
                                 </div>
 
                                 <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white md:order-2">

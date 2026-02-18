@@ -9,10 +9,9 @@ export default function PrivacidadPage() {
             </section>
             <section className="px-6 md:px-12 py-16 max-w-3xl">
                 <div className="space-y-8 text-sm text-gray-600 leading-relaxed">
-                    <p><strong className="text-black">Última actualización:</strong> [FECHA]</p>
                     <div>
                         <h2 className="text-xs font-bold uppercase tracking-widest text-black mb-3">1. Responsable del tratamiento</h2>
-                        <p>[NOMBRE EMPRESA], con CIF [CIF], domicilio en [DIRECCIÓN], es el responsable del tratamiento de los datos personales recogidos a través de este sitio web.</p>
+                        <p>El responsable del tratamiento de los datos personales recogidos a través de este sitio web puede ser contactado en hello@growth4events.com.</p>
                     </div>
                     <div>
                         <h2 className="text-xs font-bold uppercase tracking-widest text-black mb-3">2. Datos que recogemos</h2>
