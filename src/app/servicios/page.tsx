@@ -18,12 +18,12 @@ export default function ServiciosPage() {
     }, []);
 
     const services = [
-        { key: "svc1", image: "/images/eventos-8.jpg", alt: "Premium venue and restaurant reservations for corporate events in Spain", id: "venues" },
+        { key: "svc1", image: "/images/eventos-2.jpg", alt: "Premium venue and restaurant reservations for corporate events in Spain", id: "venues" },
         { key: "svc2", image: "/images/eventos-6.jpg", alt: "Event branding design — stands, merchandising, visual identity Spain", id: "branding" },
         { key: "svc3", image: "/images/eventos-3.jpg", alt: "Professional exhibition staffing and event staff Spain", id: "staffing" },
-        { key: "svc4", image: "/images/eventos-4.jpg", alt: "Professional driver transfers for corporate events Spain", id: "transfers" },
-        { key: "svc5", image: "/images/eventos-14.jpg", alt: "Live music with professional bands for corporate events Spain", id: "music" },
-        { key: "svc6", image: "/images/eventos-2.jpg", alt: "Furniture, food and catering supply for trade shows Spain", id: "catering" },
+        { key: "svc4", image: "/images/eventos-8.jpg", alt: "Professional driver transfers for corporate events Spain", id: "transfers" },
+        { key: "svc5", image: "/images/claude.png", alt: "Live music with professional bands for corporate events Spain", id: "music" },
+        { key: "svc6", image: "/images/eventos-4.jpg", alt: "Furniture, food and catering supply for trade shows Spain", id: "catering" },
         { key: "svc7", image: "/images/eventos-11.jpg", alt: "MICE services and corporate travel organization Spain", id: "mice" },
     ];
 

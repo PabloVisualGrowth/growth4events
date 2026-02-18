@@ -224,7 +224,7 @@ export default function HomePage() {
 
             {/* ═══ LOCAL PARTNER BLOCK ═══ */}
             <section className="grid grid-cols-1 md:grid-cols-2 border-b border-black">
-                <div className="relative border-b md:border-b-0 md:border-r border-black group h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500">
+                <div className="relative border-b md:border-b-0 md:border-r border-black group min-h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500">
                     <motion.div
                         initial={false}
                         whileInView={isMobile ? { backgroundColor: "#0cc0df" } : {}}
