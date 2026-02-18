@@ -17,30 +17,32 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Eventos Corporativos España | Growth4Events - Tu Partner 360°",
+  title: "Corporate Event Support in Spain | Growth 4 Events",
   description:
-    "Conecta con proveedores especializados en eventos corporativos, MICE y roadshows. Staffing, catering, logística y branding para tu evento.",
+    "Strategic operational support for corporate events and trade shows in Spain. Professional staffing, venue bookings, event branding, catering, transfers, live music, and MICE services — coordinated locally.",
   keywords: [
-    "eventos corporativos",
-    "organización eventos",
-    "event planner España",
-    "MICE eventos",
-    "ferias comerciales",
-    "roadshows",
-    "staffing eventos",
-    "catering eventos",
+    "corporate event support Spain",
+    "trade show services Spain",
+    "exhibition staffing Spain",
+    "corporate event catering Spain",
+    "MICE services Spain",
+    "corporate transfers Spain",
+    "event branding Spain",
+    "trade show staffing Spain",
+    "corporate event coordination Spain",
+    "MICE coordination Spain",
   ],
   openGraph: {
-    title: "Eventos Corporativos España | Growth4Events",
+    title: "Corporate Event Support in Spain | Growth 4 Events",
     description:
-      "Red de partners especializados para eventos corporativos. Staffing, DMC, MICE, catering y logística integral.",
+      "Strategic operational support for corporate events and trade shows in Spain. Staffing, venues, branding, catering, transfers, and MICE coordination — all through one local contact.",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Growth4Events - Tu Partner 360° en Eventos",
+        alt: "Growth 4 Events — Corporate Event Support in Spain",
       },
     ],
   },
@@ -60,9 +62,10 @@ export const viewport = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "EventPlanner",
-  name: "Growth4Events",
-  description: "Red de partners especializados para eventos corporativos en España",
+  "@type": "LocalBusiness",
+  name: "Growth 4 Events",
+  description:
+    "Strategic operational support for corporate events and trade shows in Spain. Professional staffing, venue bookings, event branding, catering, transfers, live music, and MICE services.",
   url: "https://growth4events.com",
   telephone: "+34-645-966-701",
   address: {
@@ -70,7 +73,17 @@ const organizationSchema = {
     addressCountry: "ES",
   },
   areaServed: "ES",
-  serviceType: ["Event Planning", "Corporate Events", "MICE Events", "Trade Shows"],
+  serviceType: [
+    "Trade Show Support",
+    "Corporate Event Services",
+    "Exhibition Staffing",
+    "Event Branding Design",
+    "Professional Driver Transfers",
+    "Corporate Catering",
+    "Live Music Events",
+    "MICE Services",
+    "Corporate Travel Management",
+  ],
 };
 
 export default function RootLayout({
@@ -79,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${syne.variable}`}>
+    <html lang="en" className={`${inter.variable} ${syne.variable}`}>
       <head>
         <script
           type="application/ld+json"

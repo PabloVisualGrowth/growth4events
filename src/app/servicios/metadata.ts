@@ -1,13 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Servicios para Eventos Corporativos | Staffing, DMC, MICE | Growth4Events",
+    title: "Corporate Event Services in Spain | Growth 4 Events",
     description:
-        "Servicios profesionales para eventos: personal especializado, gestión DMC/MICE, catering gourmet y branding integral en toda España.",
-    keywords: ["servicios eventos corporativos", "staffing eventos", "DMC España", "MICE", "catering eventos"],
+        "Seven corporate event services in Spain: venue and restaurant bookings, event branding, professional staffing, driver transfers, live music, catering, and MICE coordination.",
+    keywords: [
+        "corporate event services Spain",
+        "exhibition staffing Spain",
+        "event branding Spain",
+        "corporate catering Spain",
+        "MICE services Spain",
+        "professional driver Spain",
+        "live music corporate events Spain",
+        "corporate venue booking Spain",
+        "trade show staffing Spain",
+    ],
     openGraph: {
-        title: "Servicios para Eventos Corporativos | Growth4Events",
-        description: "Staffing, DMC, MICE, catering y logística para tu evento corporativo",
+        title: "Corporate Event Services in Spain | Growth 4 Events",
+        description:
+            "Seven services, one local contact: venue bookings, event branding, staffing, transfers, catering, live music, and MICE coordination in Spain.",
         type: "website",
     },
 };
