@@ -35,7 +35,8 @@ html {
 }
 
 body {
-  background-color: var(--color-paper);
+  background: linear-gradient(135deg, #c0f5e0 0%, #d8c8f8 100%);
+  background-attachment: fixed;
   color: var(--color-void);
   font-family: var(--font-body);
   overflow-x: hidden;

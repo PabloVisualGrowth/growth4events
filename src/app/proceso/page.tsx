@@ -15,7 +15,7 @@ export default function OurApproachPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-[#FDF7E8] text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
+        <div className="min-h-screen text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
             <div className="texture-overlay" />
 
             {/* HEADER */}

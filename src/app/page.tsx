@@ -8,7 +8,7 @@ export default function RootRedirect() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#FDF7E8] flex items-center justify-center">
+        <div className="min-h-screen flex items-center justify-center">
             <p className="text-lg text-gray-600">Redirecting to Visual & Growth...</p>
         </div>
     );

@@ -2,7 +2,7 @@
 
 export default function CookiesPage() {
     return (
-        <div className="min-h-screen bg-[#FDF7E8] text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
+        <div className="min-h-screen text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
             <div className="texture-overlay" />
             <section className="pt-32 pb-20 px-6 md:px-12 border-b border-black">
                 <h1 className="type-display-huge text-5xl md:text-7xl mb-8">Cookies</h1>

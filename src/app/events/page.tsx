@@ -10,7 +10,6 @@ import { AccordionItem } from "@/components/AccordionItem";
 export default function HomePage() {
     const { t } = useLanguage();
     const [isMobile, setIsMobile] = useState(false);
-    const [localHover, setLocalHover] = useState(false);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -20,7 +19,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#FDF7E8] text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
+        <div className="min-h-screen text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
             <div className="texture-overlay" />
 
             {/* ═══ HERO — Image mosaic with H1 ═══ */}
@@ -195,22 +194,16 @@ export default function HomePage() {
                         key={a.key}
                         className={`relative h-[50vh] md:h-[65vh] group overflow-hidden ${i < 2 ? "md:border-r border-b md:border-b-0 border-black" : ""}`}
                     >
-                        <motion.div
-                            initial={{ filter: "grayscale(100%)" }}
-                            whileInView={isMobile ? { filter: "grayscale(0%)" } : {}}
-                            whileHover={{ filter: "grayscale(0%)" }}
-                            viewport={{ amount: 0.2, margin: "-30% 0px -30% 0px" }}
-                            className="absolute inset-0"
-                        >
+                        <div className="absolute inset-0">
                             <Image
                                 src={a.img}
                                 alt={a.alt}
                                 fill
-                                className="object-cover transition-all duration-700"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 quality={95}
                                 loading="lazy"
                             />
-                        </motion.div>
+                        </div>
                         <div className="absolute top-0 left-0 p-6 pointer-events-none">
                             <span className="bg-white text-black px-3 py-1 text-[10px] font-bold uppercase tracking-widest border border-black rounded-full">
                                 {t(`${a.key}_title`)}
@@ -225,11 +218,7 @@ export default function HomePage() {
 
             {/* ═══ LOCAL PARTNER BLOCK ═══ */}
             <section className="grid grid-cols-1 md:grid-cols-2 border-b border-black">
-                <div
-                    className="relative border-b md:border-b-0 md:border-r border-black group min-h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500"
-                    onMouseEnter={() => setLocalHover(true)}
-                    onMouseLeave={() => setLocalHover(false)}
-                >
+                <div className="relative border-b md:border-b-0 md:border-r border-black group min-h-[55vh] flex flex-col justify-end p-8 md:p-12 hover:bg-[#0cc0df] hover:text-white transition-colors duration-500">
                     <motion.div
                         initial={false}
                         whileInView={isMobile ? { backgroundColor: "#0cc0df" } : {}}
@@ -253,15 +242,12 @@ export default function HomePage() {
                 </div>
 
                 <div className="relative h-[55vh] md:h-auto overflow-hidden bg-gray-100">
-                    <div
-                        className="absolute inset-0"
-                        style={{ filter: localHover ? "grayscale(0%)" : "grayscale(100%)", transition: "filter 0.7s ease" }}
-                    >
+                    <div className="absolute inset-0">
                         <Image
                             src="/images/eventos-10.jpg"
                             alt="Local coordination for corporate events in Spain"
                             fill
-                            className="object-cover transition-all duration-1000"
+                            className="object-cover transition-transform duration-700"
                             quality={95}
                             loading="lazy"
                         />

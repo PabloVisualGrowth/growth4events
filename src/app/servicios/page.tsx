@@ -9,7 +9,6 @@ import { useLanguage } from "@/lib/i18n";
 export default function ServiciosPage() {
     const { t } = useLanguage();
     const [isMobile, setIsMobile] = useState(false);
-    const [hoveredSvc, setHoveredSvc] = useState<number | null>(null);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -29,7 +28,7 @@ export default function ServiciosPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-[#FDF7E8] text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
+        <div className="min-h-screen text-black overflow-x-hidden selection:bg-[#0cc0df] selection:text-white">
             <div className="texture-overlay" />
 
             {/* HEADER */}
@@ -55,11 +54,7 @@ export default function ServiciosPage() {
                         {/* Even index: text (2/3) | image (1/3) */}
                         {index % 2 === 0 && (
                             <>
-                                <div
-                                    className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 md:border-r border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white"
-                                    onMouseEnter={() => setHoveredSvc(index)}
-                                    onMouseLeave={() => setHoveredSvc(null)}
-                                >
+                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 md:border-r border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white">
                                     <motion.div
                                         initial={false}
                                         whileInView={isMobile ? { backgroundColor: "#0cc0df", color: "#ffffff" } : {}}
@@ -90,15 +85,12 @@ export default function ServiciosPage() {
                                 </div>
 
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 border-black">
-                                    <div
-                                        className="absolute inset-0"
-                                        style={{ filter: hoveredSvc === index ? "grayscale(0%)" : "grayscale(100%)", transition: "filter 0.7s ease" }}
-                                    >
+                                    <div className="absolute inset-0">
                                         <Image
                                             src={svc.image}
                                             alt={svc.alt}
                                             fill
-                                            className={`object-cover transition-transform duration-700 ${hoveredSvc === index ? "scale-105" : "scale-100"}`}
+                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
                                     </div>
                                 </div>
@@ -109,24 +101,17 @@ export default function ServiciosPage() {
                         {index % 2 === 1 && (
                             <>
                                 <div className="relative col-span-1 h-[50vh] md:h-auto overflow-hidden border-b md:border-b-0 md:border-r border-black md:order-1">
-                                    <div
-                                        className="absolute inset-0"
-                                        style={{ filter: hoveredSvc === index ? "grayscale(0%)" : "grayscale(100%)", transition: "filter 0.7s ease" }}
-                                    >
+                                    <div className="absolute inset-0">
                                         <Image
                                             src={svc.image}
                                             alt={svc.alt}
                                             fill
-                                            className={`object-cover transition-transform duration-700 ${hoveredSvc === index ? "scale-105" : "scale-100"}`}
+                                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
                                     </div>
                                 </div>
 
-                                <div
-                                    className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white md:order-2"
-                                    onMouseEnter={() => setHoveredSvc(index)}
-                                    onMouseLeave={() => setHoveredSvc(null)}
-                                >
+                                <div className="relative col-span-1 md:col-span-2 flex flex-col justify-center p-8 md:p-16 border-b md:border-b-0 border-black transition-colors duration-500 hover:bg-[#0cc0df] hover:text-white md:order-2">
                                     <motion.div
                                         initial={false}
                                         whileInView={isMobile ? { backgroundColor: "#0cc0df", color: "#ffffff" } : {}}
