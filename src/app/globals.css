@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #c0f5e0 0%, #d8c8f8 100%);
+  background: linear-gradient(135deg, #c0c0c0 0%, #ffffff 65%);
   background-attachment: fixed;
   color: var(--color-void);
   font-family: var(--font-body);
